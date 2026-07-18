@@ -1,19 +1,19 @@
 #!/usr/bin/python3
-"""Module documentation."""
+"""This module explains the purpose of the module."""
 
 
 class ClassName:
-    """Class documentation."""
+    """This class explains the purpose of the class."""
 
     def __init__(self):
-        """Initialize the class."""
+        """Initialize a new instance of ClassName."""
         pass
 
     def method_name(self):
-        """Method documentation."""
+        """Describe what this method does."""
         pass
 
 
 def function_name():
-    """Function documentation."""
+    """Describe what this function does."""
     pass
