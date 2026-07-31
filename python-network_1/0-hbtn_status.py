@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Fetches a URL using urllib and displays information about the response body."""
+"""Fetches https://intranet.hbtn.io/status and prints response info."""
 from urllib import request
-with request.urlopen("https://alu-intranet.hbtn.io/status") as response:
+with request.urlopen("https://intranet.hbtn.io/status") as response:
     body = response.read()
     print("Body response:")
     print("\t- type: {}".format(type(body)))
