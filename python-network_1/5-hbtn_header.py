@@ -2,5 +2,8 @@
 """Sends a request to a URL and displays the X-Request-Id response header."""
 import requests
 import sys
-response = requests.get(sys.argv[1])
-print(response.headers.get("X-Request-Id"))
+
+
+if __name__ == "__main__":
+    r = requests.get(sys.argv[1])
+    print(r.headers.get("X-Request-Id"))
