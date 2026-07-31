@@ -1,7 +1,13 @@
 #!/usr/bin/python3
-"""Sends a POST request with an email parameter and displays the response body."""
+"""Sends a POST request to a URL with an email parameter and prints body."""
 from urllib import parse, request
 import sys
-data = parse.urlencode({"email": sys.argv[2]}).encode("ascii")
-with request.urlopen(sys.argv[1], data) as response:
-    print(response.read().decode("utf-8"))
+
+
+if __name__ == "__main__":
+    url = sys.argv[1]
+    email = sys.argv[2]
+    data = parse.urlencode({"email": email}).encode("utf-8")
+    with request.urlopen(url, data) as response:
+        body = response.read()
+        print(body.decode("utf-8"))
