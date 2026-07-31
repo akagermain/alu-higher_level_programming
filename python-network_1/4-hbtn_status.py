@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-"""Fetches a URL using requests and displays information about the response body."""
+"""Fetches https://alu-intranet.hbtn.io/status and displays response info."""
 import requests
-response = requests.get("https://alu-intranet.hbtn.io/status")
-print("Body response:")
-print("\t- type: {}".format(type(response.text)))
-print("\t- content: {}".format(response.text))
+
+
+if __name__ == "__main__":
+    r = requests.get("https://alu-intranet.hbtn.io/status")
+    print("Body response:")
+    print("\t- type: {}".format(type(r.text)))
+    print("\t- content: {}".format(r.text))
+    print("\t- utf8 content: {}".format(r.text))
