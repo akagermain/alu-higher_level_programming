@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Sends a request to a URL, displays the X-Request-Id response header."""
 from urllib import request
 import sys
